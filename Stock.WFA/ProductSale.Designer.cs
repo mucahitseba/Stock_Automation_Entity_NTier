@@ -41,22 +41,22 @@
             this.rbCreditCard = new System.Windows.Forms.RadioButton();
             this.rbCash = new System.Windows.Forms.RadioButton();
             this.pnlCash = new System.Windows.Forms.Panel();
+            this.nuMoney = new System.Windows.Forms.NumericUpDown();
             this.lblChange = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.lstSale = new System.Windows.Forms.ListBox();
             this.cmsSale = new System.Windows.Forms.ContextMenuStrip(this.components);
+            this.deleteToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.label6 = new System.Windows.Forms.Label();
             this.lblTotal = new System.Windows.Forms.Label();
             this.btnFinishTheProcess = new System.Windows.Forms.Button();
-            this.nuMoney = new System.Windows.Forms.NumericUpDown();
-            this.deleteToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             ((System.ComponentModel.ISupportInitialize)(this.nuPiece)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.nuBag)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.pnlCash.SuspendLayout();
-            this.cmsSale.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.nuMoney)).BeginInit();
+            this.cmsSale.SuspendLayout();
             this.SuspendLayout();
             // 
             // lstProducts
@@ -176,6 +176,20 @@
             this.pnlCash.Size = new System.Drawing.Size(414, 54);
             this.pnlCash.TabIndex = 7;
             // 
+            // nuMoney
+            // 
+            this.nuMoney.DecimalPlaces = 2;
+            this.nuMoney.Location = new System.Drawing.Point(93, 18);
+            this.nuMoney.Maximum = new decimal(new int[] {
+            100000,
+            0,
+            0,
+            0});
+            this.nuMoney.Name = "nuMoney";
+            this.nuMoney.Size = new System.Drawing.Size(120, 22);
+            this.nuMoney.TabIndex = 13;
+            this.nuMoney.ValueChanged += new System.EventHandler(this.nuMoney_ValueChanged);
+            // 
             // lblChange
             // 
             this.lblChange.AutoSize = true;
@@ -220,6 +234,13 @@
             this.cmsSale.Name = "cmsSale";
             this.cmsSale.Size = new System.Drawing.Size(123, 28);
             // 
+            // deleteToolStripMenuItem
+            // 
+            this.deleteToolStripMenuItem.Name = "deleteToolStripMenuItem";
+            this.deleteToolStripMenuItem.Size = new System.Drawing.Size(122, 24);
+            this.deleteToolStripMenuItem.Text = "Delete";
+            this.deleteToolStripMenuItem.Click += new System.EventHandler(this.deleteToolStripMenuItem_Click);
+            // 
             // label6
             // 
             this.label6.AutoSize = true;
@@ -249,27 +270,6 @@
             this.btnFinishTheProcess.UseVisualStyleBackColor = true;
             this.btnFinishTheProcess.Click += new System.EventHandler(this.btnFinishTheProcess_Click);
             // 
-            // nuMoney
-            // 
-            this.nuMoney.DecimalPlaces = 2;
-            this.nuMoney.Location = new System.Drawing.Point(93, 18);
-            this.nuMoney.Maximum = new decimal(new int[] {
-            100000,
-            0,
-            0,
-            0});
-            this.nuMoney.Name = "nuMoney";
-            this.nuMoney.Size = new System.Drawing.Size(120, 22);
-            this.nuMoney.TabIndex = 13;
-            this.nuMoney.ValueChanged += new System.EventHandler(this.nuMoney_ValueChanged);
-            // 
-            // deleteToolStripMenuItem
-            // 
-            this.deleteToolStripMenuItem.Name = "deleteToolStripMenuItem";
-            this.deleteToolStripMenuItem.Size = new System.Drawing.Size(210, 24);
-            this.deleteToolStripMenuItem.Text = "Delete";
-            this.deleteToolStripMenuItem.Click += new System.EventHandler(this.deleteToolStripMenuItem_Click);
-            // 
             // ProductSale
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -298,8 +298,8 @@
             this.groupBox1.PerformLayout();
             this.pnlCash.ResumeLayout(false);
             this.pnlCash.PerformLayout();
-            this.cmsSale.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.nuMoney)).EndInit();
+            this.cmsSale.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
