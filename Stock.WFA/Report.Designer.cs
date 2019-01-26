@@ -97,7 +97,7 @@
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
             this.tabPage1.Size = new System.Drawing.Size(821, 477);
             this.tabPage1.TabIndex = 0;
-            this.tabPage1.Text = "tabPage1";
+            this.tabPage1.Text = "Stock";
             this.tabPage1.UseVisualStyleBackColor = true;
             // 
             // btnStock
@@ -108,6 +108,7 @@
             this.btnStock.TabIndex = 1;
             this.btnStock.Text = "Excel";
             this.btnStock.UseVisualStyleBackColor = true;
+            this.btnStock.Click += new System.EventHandler(this.btnStock_Click);
             // 
             // dgvStock
             // 
@@ -130,7 +131,7 @@
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
             this.tabPage2.Size = new System.Drawing.Size(821, 477);
             this.tabPage2.TabIndex = 1;
-            this.tabPage2.Text = "tabPage2";
+            this.tabPage2.Text = "Daily Sales";
             this.tabPage2.UseVisualStyleBackColor = true;
             // 
             // cbDailyByCategory
@@ -142,6 +143,7 @@
             this.cbDailyByCategory.TabIndex = 4;
             this.cbDailyByCategory.Text = "Daily by Category";
             this.cbDailyByCategory.UseVisualStyleBackColor = true;
+            this.cbDailyByCategory.CheckedChanged += new System.EventHandler(this.cbDailyByCategory_CheckedChanged);
             // 
             // dtpHistory
             // 
@@ -163,6 +165,7 @@
             this.btnDaily.TabIndex = 2;
             this.btnDaily.Text = "Excel";
             this.btnDaily.UseVisualStyleBackColor = true;
+            this.btnDaily.Click += new System.EventHandler(this.btnDaily_Click);
             // 
             // dgvDailySale
             // 
@@ -188,16 +191,30 @@
             this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
             this.tabPage3.Size = new System.Drawing.Size(821, 477);
             this.tabPage3.TabIndex = 2;
-            this.tabPage3.Text = "tabPage3";
+            this.tabPage3.Text = "Monthly Sales";
             this.tabPage3.UseVisualStyleBackColor = true;
             // 
             // cmbMonths
             // 
             this.cmbMonths.FormattingEnabled = true;
+            this.cmbMonths.Items.AddRange(new object[] {
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "10",
+            "11",
+            "12"});
             this.cmbMonths.Location = new System.Drawing.Point(493, 16);
             this.cmbMonths.Name = "cmbMonths";
             this.cmbMonths.Size = new System.Drawing.Size(121, 24);
             this.cmbMonths.TabIndex = 10;
+            this.cmbMonths.SelectedIndexChanged += new System.EventHandler(this.cmbMonths_SelectedIndexChanged);
             // 
             // label2
             // 
@@ -211,6 +228,11 @@
             // cmbYearsMonthly
             // 
             this.cmbYearsMonthly.FormattingEnabled = true;
+            this.cmbYearsMonthly.Items.AddRange(new object[] {
+            "2016",
+            "2017",
+            "2018",
+            "2019"});
             this.cmbYearsMonthly.Location = new System.Drawing.Point(270, 16);
             this.cmbYearsMonthly.Name = "cmbYearsMonthly";
             this.cmbYearsMonthly.Size = new System.Drawing.Size(121, 24);
@@ -233,6 +255,7 @@
             this.btnMonthly.TabIndex = 6;
             this.btnMonthly.Text = "Excel";
             this.btnMonthly.UseVisualStyleBackColor = true;
+            this.btnMonthly.Click += new System.EventHandler(this.btnMonthly_Click);
             // 
             // cbMonthlyByCategory
             // 
@@ -243,6 +266,7 @@
             this.cbMonthlyByCategory.TabIndex = 5;
             this.cbMonthlyByCategory.Text = "Monthly by Category";
             this.cbMonthlyByCategory.UseVisualStyleBackColor = true;
+            this.cbMonthlyByCategory.CheckedChanged += new System.EventHandler(this.cbMonthlyByCategory_CheckedChanged);
             // 
             // dgvMonthlySale
             // 
@@ -266,16 +290,22 @@
             this.tabPage4.Padding = new System.Windows.Forms.Padding(3);
             this.tabPage4.Size = new System.Drawing.Size(821, 477);
             this.tabPage4.TabIndex = 3;
-            this.tabPage4.Text = "tabPage4";
+            this.tabPage4.Text = "Yearly Sales";
             this.tabPage4.UseVisualStyleBackColor = true;
             // 
             // cmbYears
             // 
             this.cmbYears.FormattingEnabled = true;
+            this.cmbYears.Items.AddRange(new object[] {
+            "2016",
+            "2017",
+            "2018",
+            "2019"});
             this.cmbYears.Location = new System.Drawing.Point(277, 22);
             this.cmbYears.Name = "cmbYears";
             this.cmbYears.Size = new System.Drawing.Size(121, 24);
             this.cmbYears.TabIndex = 10;
+            this.cmbYears.SelectedIndexChanged += new System.EventHandler(this.cmbYears_SelectedIndexChanged);
             // 
             // label3
             // 
@@ -294,6 +324,7 @@
             this.btnYearly.TabIndex = 7;
             this.btnYearly.Text = "Excel";
             this.btnYearly.UseVisualStyleBackColor = true;
+            this.btnYearly.Click += new System.EventHandler(this.btnYearly_Click);
             // 
             // cbYearlyByCategory
             // 
@@ -304,6 +335,7 @@
             this.cbYearlyByCategory.TabIndex = 6;
             this.cbYearlyByCategory.Text = "Yearly by Category";
             this.cbYearlyByCategory.UseVisualStyleBackColor = true;
+            this.cbYearlyByCategory.CheckedChanged += new System.EventHandler(this.cbYearlyByCategory_CheckedChanged);
             // 
             // dgvYearlySale
             // 
@@ -326,7 +358,7 @@
             this.tabPage5.Padding = new System.Windows.Forms.Padding(3);
             this.tabPage5.Size = new System.Drawing.Size(821, 477);
             this.tabPage5.TabIndex = 4;
-            this.tabPage5.Text = "tabPage5";
+            this.tabPage5.Text = "Payment Details";
             this.tabPage5.UseVisualStyleBackColor = true;
             // 
             // btnPaymentDetail
@@ -338,6 +370,7 @@
             this.btnPaymentDetail.TabIndex = 14;
             this.btnPaymentDetail.Text = "Excel";
             this.btnPaymentDetail.UseVisualStyleBackColor = true;
+            this.btnPaymentDetail.Click += new System.EventHandler(this.btnPaymentDetail_Click);
             // 
             // panel1
             // 
@@ -360,6 +393,7 @@
             this.rbCreditCard.TabStop = true;
             this.rbCreditCard.Text = "Credit Card";
             this.rbCreditCard.UseVisualStyleBackColor = true;
+            this.rbCreditCard.CheckedChanged += new System.EventHandler(this.rbCreditCard_CheckedChanged);
             // 
             // rbCash
             // 
@@ -372,6 +406,7 @@
             this.rbCash.TabStop = true;
             this.rbCash.Text = "Cash";
             this.rbCash.UseVisualStyleBackColor = true;
+            this.rbCash.CheckedChanged += new System.EventHandler(this.rbCash_CheckedChanged);
             // 
             // label4
             // 
