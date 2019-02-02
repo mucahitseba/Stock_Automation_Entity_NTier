@@ -522,5 +522,10 @@ namespace Stock.WFA
         {
             cmbYears_SelectedIndexChanged(sender, e);
         }
+
+        private void dgvPaymentDetail_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }

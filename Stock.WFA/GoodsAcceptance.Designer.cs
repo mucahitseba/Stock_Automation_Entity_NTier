@@ -46,41 +46,46 @@
             this.cmsProductOperations = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.updateToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.deleteToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
             ((System.ComponentModel.ISupportInitialize)(this.nuKDV)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.nuAvails)).BeginInit();
             this.cmsProductOperations.SuspendLayout();
+            this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(47, 82);
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label1.Location = new System.Drawing.Point(33, 71);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(53, 17);
+            this.label1.Size = new System.Drawing.Size(125, 18);
             this.label1.TabIndex = 0;
-            this.label1.Text = "Search";
+            this.label1.Text = "Product Search";
             // 
             // txtSearch
             // 
-            this.txtSearch.Location = new System.Drawing.Point(50, 111);
+            this.txtSearch.Location = new System.Drawing.Point(36, 108);
             this.txtSearch.Name = "txtSearch";
-            this.txtSearch.Size = new System.Drawing.Size(100, 22);
+            this.txtSearch.Size = new System.Drawing.Size(448, 22);
             this.txtSearch.TabIndex = 1;
             this.txtSearch.KeyUp += new System.Windows.Forms.KeyEventHandler(this.txtSearch_KeyUp);
             // 
             // tvProducts
             // 
+            this.tvProducts.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.tvProducts.Location = new System.Drawing.Point(36, 142);
             this.tvProducts.Name = "tvProducts";
-            this.tvProducts.Size = new System.Drawing.Size(193, 281);
+            this.tvProducts.Size = new System.Drawing.Size(448, 549);
             this.tvProducts.TabIndex = 2;
             this.tvProducts.AfterSelect += new System.Windows.Forms.TreeViewEventHandler(this.tvProducts_AfterSelect);
             // 
             // btnBarcodeReading
             // 
-            this.btnBarcodeReading.Location = new System.Drawing.Point(240, 82);
+            this.btnBarcodeReading.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btnBarcodeReading.Location = new System.Drawing.Point(517, 71);
             this.btnBarcodeReading.Name = "btnBarcodeReading";
-            this.btnBarcodeReading.Size = new System.Drawing.Size(139, 23);
+            this.btnBarcodeReading.Size = new System.Drawing.Size(449, 59);
             this.btnBarcodeReading.TabIndex = 3;
             this.btnBarcodeReading.Text = "Barcode Reading";
             this.btnBarcodeReading.UseVisualStyleBackColor = true;
@@ -89,67 +94,68 @@
             // lblInformation
             // 
             this.lblInformation.AutoSize = true;
-            this.lblInformation.Location = new System.Drawing.Point(249, 142);
+            this.lblInformation.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.lblInformation.Location = new System.Drawing.Point(514, 142);
             this.lblInformation.Name = "lblInformation";
-            this.lblInformation.Size = new System.Drawing.Size(78, 17);
+            this.lblInformation.Size = new System.Drawing.Size(93, 18);
             this.lblInformation.TabIndex = 4;
             this.lblInformation.Text = "Information";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(595, 68);
+            this.label2.Location = new System.Drawing.Point(19, 58);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(110, 17);
+            this.label2.Size = new System.Drawing.Size(130, 18);
             this.label2.TabIndex = 5;
             this.label2.Text = "Category Name:";
             // 
             // txtCategoryName
             // 
-            this.txtCategoryName.Location = new System.Drawing.Point(746, 68);
+            this.txtCategoryName.Location = new System.Drawing.Point(170, 58);
             this.txtCategoryName.Name = "txtCategoryName";
-            this.txtCategoryName.Size = new System.Drawing.Size(100, 22);
+            this.txtCategoryName.Size = new System.Drawing.Size(178, 24);
             this.txtCategoryName.TabIndex = 6;
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(665, 111);
+            this.label3.Location = new System.Drawing.Point(89, 101);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(40, 17);
+            this.label3.Size = new System.Drawing.Size(46, 18);
             this.label3.TabIndex = 5;
             this.label3.Text = "KDV:";
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(656, 154);
+            this.label4.Location = new System.Drawing.Point(80, 144);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(49, 17);
+            this.label4.Size = new System.Drawing.Size(57, 18);
             this.label4.TabIndex = 5;
             this.label4.Text = "Avails:";
             // 
             // nuKDV
             // 
             this.nuKDV.DecimalPlaces = 2;
-            this.nuKDV.Location = new System.Drawing.Point(746, 114);
+            this.nuKDV.Location = new System.Drawing.Point(170, 104);
             this.nuKDV.Name = "nuKDV";
-            this.nuKDV.Size = new System.Drawing.Size(120, 22);
+            this.nuKDV.Size = new System.Drawing.Size(178, 24);
             this.nuKDV.TabIndex = 7;
             // 
             // nuAvails
             // 
             this.nuAvails.DecimalPlaces = 2;
-            this.nuAvails.Location = new System.Drawing.Point(746, 154);
+            this.nuAvails.Location = new System.Drawing.Point(170, 144);
             this.nuAvails.Name = "nuAvails";
-            this.nuAvails.Size = new System.Drawing.Size(120, 22);
+            this.nuAvails.Size = new System.Drawing.Size(178, 24);
             this.nuAvails.TabIndex = 7;
             // 
             // btnInsert
             // 
-            this.btnInsert.Location = new System.Drawing.Point(620, 228);
+            this.btnInsert.Location = new System.Drawing.Point(37, 201);
             this.btnInsert.Name = "btnInsert";
-            this.btnInsert.Size = new System.Drawing.Size(75, 23);
+            this.btnInsert.Size = new System.Drawing.Size(326, 98);
             this.btnInsert.TabIndex = 8;
             this.btnInsert.Text = "Insert";
             this.btnInsert.UseVisualStyleBackColor = true;
@@ -157,9 +163,9 @@
             // 
             // btnUpdate
             // 
-            this.btnUpdate.Location = new System.Drawing.Point(715, 228);
+            this.btnUpdate.Location = new System.Drawing.Point(37, 484);
             this.btnUpdate.Name = "btnUpdate";
-            this.btnUpdate.Size = new System.Drawing.Size(75, 23);
+            this.btnUpdate.Size = new System.Drawing.Size(326, 98);
             this.btnUpdate.TabIndex = 8;
             this.btnUpdate.Text = "Update";
             this.btnUpdate.UseVisualStyleBackColor = true;
@@ -167,9 +173,9 @@
             // 
             // btnDelete
             // 
-            this.btnDelete.Location = new System.Drawing.Point(796, 228);
+            this.btnDelete.Location = new System.Drawing.Point(37, 342);
             this.btnDelete.Name = "btnDelete";
-            this.btnDelete.Size = new System.Drawing.Size(75, 23);
+            this.btnDelete.Size = new System.Drawing.Size(326, 98);
             this.btnDelete.TabIndex = 8;
             this.btnDelete.Text = "Delete";
             this.btnDelete.UseVisualStyleBackColor = true;
@@ -198,31 +204,46 @@
             this.deleteToolStripMenuItem.Text = "Delete";
             this.deleteToolStripMenuItem.Click += new System.EventHandler(this.deleteToolStripMenuItem_Click);
             // 
+            // groupBox1
+            // 
+            this.groupBox1.Controls.Add(this.btnDelete);
+            this.groupBox1.Controls.Add(this.btnUpdate);
+            this.groupBox1.Controls.Add(this.nuAvails);
+            this.groupBox1.Controls.Add(this.btnInsert);
+            this.groupBox1.Controls.Add(this.nuKDV);
+            this.groupBox1.Controls.Add(this.txtCategoryName);
+            this.groupBox1.Controls.Add(this.label4);
+            this.groupBox1.Controls.Add(this.label3);
+            this.groupBox1.Controls.Add(this.label2);
+            this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.groupBox1.Location = new System.Drawing.Point(1058, 108);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(382, 588);
+            this.groupBox1.TabIndex = 9;
+            this.groupBox1.TabStop = false;
+            this.groupBox1.Text = "Category Operations";
+            // 
             // GoodsAcceptance
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1121, 501);
-            this.Controls.Add(this.btnDelete);
-            this.Controls.Add(this.btnUpdate);
-            this.Controls.Add(this.btnInsert);
-            this.Controls.Add(this.nuAvails);
-            this.Controls.Add(this.nuKDV);
-            this.Controls.Add(this.txtCategoryName);
-            this.Controls.Add(this.label4);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.label2);
+            this.ClientSize = new System.Drawing.Size(1482, 703);
+            this.ControlBox = false;
+            this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.lblInformation);
             this.Controls.Add(this.btnBarcodeReading);
             this.Controls.Add(this.tvProducts);
             this.Controls.Add(this.txtSearch);
             this.Controls.Add(this.label1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "GoodsAcceptance";
-            this.Text = "GoodsAcceptance";
+            this.Text = "Goods Acceptance";
             this.Load += new System.EventHandler(this.GoodsAcceptance_Load);
             ((System.ComponentModel.ISupportInitialize)(this.nuKDV)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.nuAvails)).EndInit();
             this.cmsProductOperations.ResumeLayout(false);
+            this.groupBox1.ResumeLayout(false);
+            this.groupBox1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -247,5 +268,6 @@
         private System.Windows.Forms.ContextMenuStrip cmsProductOperations;
         private System.Windows.Forms.ToolStripMenuItem updateToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem deleteToolStripMenuItem;
+        private System.Windows.Forms.GroupBox groupBox1;
     }
 }

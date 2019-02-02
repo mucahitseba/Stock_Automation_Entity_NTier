@@ -39,7 +39,7 @@
             // 
             // pbBarcode
             // 
-            this.pbBarcode.Location = new System.Drawing.Point(282, 84);
+            this.pbBarcode.Location = new System.Drawing.Point(164, 48);
             this.pbBarcode.Name = "pbBarcode";
             this.pbBarcode.Size = new System.Drawing.Size(353, 163);
             this.pbBarcode.TabIndex = 0;
@@ -48,34 +48,38 @@
             // lblProductName
             // 
             this.lblProductName.AutoSize = true;
-            this.lblProductName.Location = new System.Drawing.Point(79, 167);
+            this.lblProductName.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.lblProductName.Location = new System.Drawing.Point(25, 232);
             this.lblProductName.Name = "lblProductName";
-            this.lblProductName.Size = new System.Drawing.Size(46, 17);
+            this.lblProductName.Size = new System.Drawing.Size(52, 18);
             this.lblProductName.TabIndex = 1;
             this.lblProductName.Text = "label1";
             // 
             // lblBox
             // 
             this.lblBox.AutoSize = true;
-            this.lblBox.Location = new System.Drawing.Point(282, 310);
+            this.lblBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.lblBox.Location = new System.Drawing.Point(270, 253);
             this.lblBox.Name = "lblBox";
-            this.lblBox.Size = new System.Drawing.Size(35, 17);
+            this.lblBox.Size = new System.Drawing.Size(42, 18);
             this.lblBox.TabIndex = 2;
             this.lblBox.Text = "Box:";
             // 
             // nuBox
             // 
-            this.nuBox.Location = new System.Drawing.Point(369, 305);
+            this.nuBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.nuBox.Location = new System.Drawing.Point(357, 248);
             this.nuBox.Name = "nuBox";
-            this.nuBox.Size = new System.Drawing.Size(58, 22);
+            this.nuBox.Size = new System.Drawing.Size(58, 24);
             this.nuBox.TabIndex = 3;
             this.nuBox.ValueChanged += new System.EventHandler(this.nuBox_ValueChanged);
             // 
             // txtBarcode
             // 
-            this.txtBarcode.Location = new System.Drawing.Point(285, 351);
+            this.txtBarcode.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.txtBarcode.Location = new System.Drawing.Point(164, 309);
             this.txtBarcode.Name = "txtBarcode";
-            this.txtBarcode.Size = new System.Drawing.Size(187, 22);
+            this.txtBarcode.Size = new System.Drawing.Size(353, 24);
             this.txtBarcode.TabIndex = 4;
             this.txtBarcode.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtBarcode_KeyDown);
             this.txtBarcode.KeyUp += new System.Windows.Forms.KeyEventHandler(this.txtBarcode_KeyUp);
@@ -84,14 +88,14 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(662, 413);
             this.Controls.Add(this.txtBarcode);
             this.Controls.Add(this.nuBox);
             this.Controls.Add(this.lblBox);
             this.Controls.Add(this.lblProductName);
             this.Controls.Add(this.pbBarcode);
             this.Name = "BarcodeReading";
-            this.Text = "BarcodeReading";
+            this.Text = "Barcode Reading";
             this.Load += new System.EventHandler(this.BarcodeReading_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pbBarcode)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.nuBox)).EndInit();
